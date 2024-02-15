@@ -15,7 +15,7 @@ body {
     background-color: #fff; /* Light mode background color */
 }
 .dark-mode {
-    background-color: #444; /* Dark mode background color */
+    background-color: black; /* Dark mode background color */
     color: white; /* Dark mode text color */
 }
 
