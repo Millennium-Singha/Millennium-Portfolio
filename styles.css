@@ -1,13 +1,15 @@
 body {
     transition: background-color 0.5s ease, color 0.5s ease;
 }
-.dark-mode {
-    background-color: #444;
-    color: white;
+.light-mode, .dark-mode {
+    color: black;
 }
 .light-mode {
     background-color: #fff;
-    color: black;
+}
+.dark-mode {
+    background-color: #444;
+    color: white;
 }
 /* The switch - the box around the slider */
 .switch {
@@ -36,4 +38,37 @@ body {
 }
 .switch.dark-mode .slider {
     transform: translateX(26px);
+}
+.nav-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.nav-menu li {
+    float: left;
+}
+.nav-menu li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Nav menu styles for light mode */
+.light-mode .nav-menu li a {
+    color: black;
+}
+.light-mode .nav-menu li a:hover {
+    background-color: #ddd;
+}
+/* Nav menu styles for dark mode */
+.dark-mode .nav-menu {
+    background-color: #333;
+}
+.dark-mode .nav-menu li a {
+    color: white;
+}
+.dark-mode .nav-menu li a:hover {
+    background-color: #111;
 }
