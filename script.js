@@ -1,11 +1,8 @@
-var switcher = document.getElementById('mode-switcher');
+const switcher = document.getElementById('mode-switcher');
 switcher.addEventListener('click', function() {
-    var body = document.body;
-  if(body.classList.contains('light-mode')) {
-    body.classList.replace('light-mode', 'dark-mode');
-    switcher.classList.add('dark-mode');
-  } else {
-    body.classList.replace('dark-mode', 'light-mode');
-    switcher.classList.remove('dark-mode');
-  }
+    const body = document.body;
+    const isLightMode = body.classList.contains('light-mode');
+    body.classList.toggle('light-mode', !isLightMode);
+    body.classList.toggle('dark-mode', isLightMode);
+    switcher.classList.toggle('dark-mode', isLightMode);
 });
