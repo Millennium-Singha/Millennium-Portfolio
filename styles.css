@@ -1,0 +1,39 @@
+body {
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+.dark-mode {
+    background-color: #444;
+    color: white;
+}
+.light-mode {
+    background-color: #fff;
+    color: black;
+}
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    background-color: #ccc;
+    cursor: pointer;
+    transition: transform .4s;
+}
+/* The Slider */
+.slider {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+.switch.dark-mode {
+    background-color: #2196F3;
+}
+.switch.dark-mode .slider {
+    transform: translateX(26px);
+}
